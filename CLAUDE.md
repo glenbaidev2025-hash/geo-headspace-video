@@ -16,7 +16,9 @@
 2. **分镜**：按句子切成场景。每个场景写明：情绪（困境/转折/治愈）、出场角色（形状+颜色）、表情、动作、转场、屏幕文字。先把分镜表发给用户确认。
 3. **配音与时间轴**：
    - **没有音频（默认走 ElevenLabs）**：按 `docs/voiceover-script.md` 把文案改写成带 Audio Tags 的口播脚本 `voice/<slug>.json`，每个片段对应一个场景（S01、S02……）。先把脚本发给用户确认。
-     - 生成音频要在**用户的 Mac 上**运行：`python3 scripts/tts_elevenlabs.py voice/<slug>.json`。云端环境访问不了 api.elevenlabs.io。用户跑完后把 `public/audio/<slug>/` 推到仓库或直接发回来。
+     - 生成音频：用户 Mac 上有一份本工程的副本，在 `/Users/glen/Documents/Projects/HeadspaceOutputs/geo-headspace-video`，它的 `.env` 里有 ElevenLabs key（只有 TTS 权限，没有 voices_read）。Claude 用 device_bash 在这份副本里运行 `python3 scripts/tts_elevenlabs.py voice/<slug>.json`：先用 device_commit_files 把 `voice/<slug>.json` 写进去，跑完后用 device_stage_files 把 `public/audio/<slug>/` 拉回云端的工作副本。不要读取或打印 key。
+     - 网络不通（403）时，请用户在 claude.ai/settings/capabilities → Code execution → Allow network egress 里允许 `api.elevenlabs.io`，或者让用户自己在终端跑这条命令。
+     - 预置声音 George（`JBFqnCBsd6RMkjVDRZzb`）在 eleven_v4 + 中文下测试可用。
    - **用户自己录的口播**：按句切成 `S01.mp3`、`S02.mp3`……放进 `public/audio/<slug>/`，再写好 `voice/<slug>.json`（text 填原句即可），运行 `--timeline-only` 生成 `timeline.json`。
    - Remotion 侧用 `src/lib/voice.tsx`：`VoiceTrack` 播放配音，`sceneWindow` 给出每个场景的帧区间，`lineStart` 给出某句开始的帧，动作和文字都卡在这些帧上（fps 30）。
 4. **实现**：每条视频建一个文件 `src/videos/<slug>.tsx`，在 `src/index.ts` 里注册 Composition。优先复用 `Character`/`Face`；新形状或新动作先加到组件里，再在视频里使用。音频用 Remotion 的 `<Audio>`。
