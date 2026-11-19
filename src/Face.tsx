@@ -1,7 +1,7 @@
 import React from 'react';
 import {C} from './theme';
 
-export type Expression = 'sad' | 'strained' | 'look' | 'calm' | 'happy' | 'sleepy';
+export type Expression = 'sad' | 'strained' | 'look' | 'calm' | 'happy' | 'sleepy' | 'shocked';
 
 type Props = {
   expression: Expression;
@@ -61,6 +61,16 @@ export const Face: React.FC<Props> = ({expression, size, blink = 0, look = {x: 0
     case 'happy':
       eyes = [lookEye(-ex), lookEye(ex)];
       mouth = <path d={`M ${-mw} ${mouthY - mw * 0.2} Q 0 ${mouthY + mw * 0.8} ${mw} ${mouthY - mw * 0.2}`} {...line} />;
+      break;
+    case 'shocked':
+      // wide white eyes with small pupils, small round "O" mouth
+      eyes = [-ex, ex].map((cx) => (
+        <g key={cx}>
+          <circle cx={cx} cy={ey} r={er * 1.3} fill="#FFFFFF" />
+          <circle cx={cx + look.x * er * 0.5} cy={ey + look.y * er * 0.5} r={er * 0.38} fill={ink} />
+        </g>
+      ));
+      mouth = <ellipse cx={0} cy={mouthY + mw * 0.15} rx={mw * 0.45} ry={mw * 0.6} {...line} />;
       break;
     case 'sleepy':
       eyes = [arcEye(-ex, false), arcEye(ex, false)];

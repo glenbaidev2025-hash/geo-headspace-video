@@ -1,7 +1,7 @@
 import React, {useId} from 'react';
 import {Expression, Face} from './Face';
 
-export type Shape = 'circle' | 'dome' | 'capsule' | 'roundRect' | 'triangle' | 'halfPill';
+export type Shape = 'circle' | 'dome' | 'capsule' | 'roundRect' | 'triangle' | 'halfPill' | 'egg';
 
 export type CharacterProps = {
   shape: Shape;
@@ -55,6 +55,13 @@ const shapeEl = (shape: Shape, w: number, h: number, fill: string, transform?: s
       return <rect x={-hw} y={-hh} width={w} height={h} rx={Math.min(w, h) * 0.18} fill={fill} transform={transform} />;
     case 'halfPill':
       return <path d={`M ${-hw} ${hh} L ${-hw} ${-hh + hw} A ${hw} ${hw} 0 0 1 ${hw} ${-hh + hw} L ${hw} ${hh} Z`} fill={fill} transform={transform} />;
+    case 'egg':
+      // narrower top, widest just below the middle
+      return (
+        <path
+          d={`M 0 ${-hh} C ${hw * 0.62} ${-hh} ${hw} ${-hh * 0.2} ${hw} ${hh * 0.25} C ${hw} ${hh * 0.75} ${hw * 0.55} ${hh} 0 ${hh} C ${-hw * 0.55} ${hh} ${-hw} ${hh * 0.75} ${-hw} ${hh * 0.25} C ${-hw} ${-hh * 0.2} ${-hw * 0.62} ${-hh} 0 ${-hh} Z`}
+          fill={fill} transform={transform} />
+      );
     case 'triangle':
       return <path d={roundedPolygon([[0, -hh], [hw, hh], [-hw, hh]], Math.min(w, h) * 0.16)} fill={fill} transform={transform} />;
   }
@@ -68,7 +75,7 @@ export const Character: React.FC<CharacterProps> = (p) => {
   const dir = p.shadeDir ?? {x: 1, y: 0.6};
   const off = Math.min(w, h) * 0.14;
   const faceSize = p.faceSize ?? Math.min(w, h) * 0.55;
-  const fo = p.faceOffset ?? {x: 0, y: shape === 'dome' ? h * 0.15 : shape === 'triangle' ? h * 0.18 : 0};
+  const fo = p.faceOffset ?? {x: 0, y: shape === 'dome' ? h * 0.15 : shape === 'triangle' ? h * 0.18 : shape === 'egg' ? h * 0.12 : 0};
   return (
     <g transform={`translate(${x} ${y}) rotate(${rotate}) translate(0 ${h / 2}) scale(${sx} ${sy}) translate(0 ${-h / 2})`}>
       <defs>
