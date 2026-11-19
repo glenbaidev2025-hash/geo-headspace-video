@@ -1,7 +1,7 @@
 {
   "slug": "example",
   "model_id": "eleven_v4",
-  "voice_id": "在 ElevenLabs 声音库里复制的 Voice ID",
+  "voice_id": "JBFqnCBsd6RMkjVDRZzb",
   "language_code": "zh",
   "voice_settings": {"stability": 0.5, "similarity_boost": 0.75},
   "gap_s": 0.35,
