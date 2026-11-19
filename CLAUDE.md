@@ -1,4 +1,4 @@
-# geo-character-video
+# geo-headspace-video
 
 用 Remotion 写代码，制作扁平几何角色风格的动画视频：彩色几何形状作为角色，带表情和动作，配合文案和口播。
 

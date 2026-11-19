@@ -1,4 +1,4 @@
-# geo-character-video
+# geo-headspace-video
 
 扁平几何角色风格的动画视频工程，基于 Remotion（React → MP4）。
 
