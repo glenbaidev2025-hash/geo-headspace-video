@@ -1,0 +1,13 @@
+{
+  "slug": "example",
+  "model_id": "eleven_v4",
+  "voice_id": "在 ElevenLabs 声音库里复制的 Voice ID",
+  "language_code": "zh",
+  "voice_settings": {"stability": 0.5, "similarity_boost": 0.75},
+  "gap_s": 0.35,
+  "segments": [
+    {"id": "S01", "text": "[low, gentle voice] 每天醒来，消息一条接一条…… [sighs] 好像永远处理不完。"},
+    {"id": "S02", "text": "[hopeful] 但其实，[short pause] 你可以先停下来。"},
+    {"id": "S03", "text": "[warm, reassuring] [slowly] 深呼吸，给自己一点空间。"}
+  ]
+}

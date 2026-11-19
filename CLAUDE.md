@@ -7,15 +7,18 @@
 - `src/theme.ts`：调色板与字体。
 - `src/Character.tsx`：几何角色组件（6 种形状，自动生成同色系深色侧面，支持挤压、旋转和表情）。
 - `src/Face.tsx`：参数化表情（sad / strained / look / happy / calm / sleepy，支持眨眼和眼珠移动）。
+- `docs/voiceover-script.md`：口播脚本规范（ElevenLabs Audio Tags 写法、情绪弧线对应的标签、JSON 格式）。
+- `src/lib/voice.tsx`：读取配音时间轴，把场景和动作对齐到口播。
 - `src/Demo.tsx`：参考实现（拥挤场景 → 放大铺满转场 → 平静场景 + 弧形文字），可以照着写新场景。
 
 ## 从文案到视频的流程
 1. **确认输入**：文案（或口播音频）、画幅（16:9 横屏 1920×1080，或 9:16 竖屏 1080×1920）、配音方式（用户自己录，或 TTS）。
 2. **分镜**：按句子切成场景。每个场景写明：情绪（困境/转折/治愈）、出场角色（形状+颜色）、表情、动作、转场、屏幕文字。先把分镜表发给用户确认。
 3. **配音与时间轴**：
-   - 用户自己录的口播：放进 `assets/audio/`，用 Whisper 转写出每句的起止时间。
-   - TTS：生成后同样放进 `assets/audio/`，记录每句的起止时间。
-   - 每个场景的帧区间严格对齐它那句话的时间轴（fps 30）。
+   - **没有音频（默认走 ElevenLabs）**：按 `docs/voiceover-script.md` 把文案改写成带 Audio Tags 的口播脚本 `voice/<slug>.json`，每个片段对应一个场景（S01、S02……）。先把脚本发给用户确认。
+     - 生成音频要在**用户的 Mac 上**运行：`python3 scripts/tts_elevenlabs.py voice/<slug>.json`。云端环境访问不了 api.elevenlabs.io。用户跑完后把 `public/audio/<slug>/` 推到仓库或直接发回来。
+   - **用户自己录的口播**：按句切成 `S01.mp3`、`S02.mp3`……放进 `public/audio/<slug>/`，再写好 `voice/<slug>.json`（text 填原句即可），运行 `--timeline-only` 生成 `timeline.json`。
+   - Remotion 侧用 `src/lib/voice.tsx`：`VoiceTrack` 播放配音，`sceneWindow` 给出每个场景的帧区间，`lineStart` 给出某句开始的帧，动作和文字都卡在这些帧上（fps 30）。
 4. **实现**：每条视频建一个文件 `src/videos/<slug>.tsx`，在 `src/index.ts` 里注册 Composition。优先复用 `Character`/`Face`；新形状或新动作先加到组件里，再在视频里使用。音频用 Remotion 的 `<Audio>`。
 5. **自检**：用 `npm run still -- <Comp> out/x.png --frame=N` 在每个场景中点截图，对照 style-bible 的 5 个关键细节检查。
 6. **渲染**：`npm run render -- <Comp> out/<slug>.mp4 --codec=h264 --crf=20`，然后把成片发给用户。
