@@ -60,7 +60,7 @@
 ## 5. 生成音频
 
 ```bash
-export ELEVENLABS_API_KEY=你的key
+# 首次：在仓库根目录建 .env 文件（已在 .gitignore，不会提交），写一行 ELEVENLABS_API_KEY=你的key
 python3 scripts/tts_elevenlabs.py voice/<slug>.json
 ```
 

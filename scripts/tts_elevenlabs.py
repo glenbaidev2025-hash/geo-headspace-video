@@ -70,7 +70,21 @@ def concat(files: list, gap: float, out: Path) -> None:
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", *inputs, "-filter_complex", fc, "-map", "[out]", str(out)], check=True)
 
 
+def load_dotenv() -> None:
+    """Read KEY=VALUE lines from <repo>/.env into the environment (does not override)."""
+    env = ROOT / ".env"
+    if not env.exists():
+        return
+    for line in env.read_text(encoding="utf-8").splitlines():
+        line = line.strip()
+        if not line or line.startswith("#") or "=" not in line:
+            continue
+        k, v = line.split("=", 1)
+        os.environ.setdefault(k.strip(), v.strip().strip('"').strip("'"))
+
+
 def main() -> None:
+    load_dotenv()
     ap = argparse.ArgumentParser()
     ap.add_argument("config")
     ap.add_argument("--only", help="comma-separated segment ids to (re)generate")
@@ -86,7 +100,7 @@ def main() -> None:
     if not a.timeline_only:
         key = os.environ.get("ELEVENLABS_API_KEY")
         if not key:
-            sys.exit("Set ELEVENLABS_API_KEY first.")
+            sys.exit("Set ELEVENLABS_API_KEY in the environment or in <repo>/.env first.")
         if not cfg.get("voice_id") or "Voice ID" in cfg["voice_id"]:
             sys.exit("Fill in voice_id in the config.")
         for seg in cfg["segments"]:
