@@ -66,6 +66,23 @@
 - `stability`：越低表达越丰富、每次差异越大，越高越稳定。官方没有给推荐值，先用 0.5，再根据试听调整。
 - `gap_s`：片段之间留的静音（秒）。
 
+可选字段（一条视频里混用多种声音、复用旧音频、留跟读停顿时用）：
+
+```json
+{
+  "voices": {"ja": {"voice_id": "cgSgspJ2msm6clMCkdW9", "language_code": "ja"}},
+  "segments": [
+    {"id": "N01", "voice": "ja", "text": "[warm] 聞き取ってみましょう。"},
+    {"id": "A01", "reuse": "ep02-check-the-time/S01", "text": "I picked up my phone to check the time."},
+    {"id": "P01", "gap_after_s": 3.0, "text": "[clear, slowly] I only meant to check the time."}
+  ]
+}
+```
+
+- `voices` + 片段的 `voice`：给片段换声音或语言，覆盖顶层的 `voice_id`、`language_code`、`voice_settings`。
+- `reuse`：直接复制 `public/audio/<slug>/<id>.mp3` 已有的音频，不调用 API。
+- `gap_after_s`：这一段之后的静音，覆盖 `gap_s`，例如跟读练习的停顿。会写进 `timeline.json`。
+
 ## 6. 生成音频
 
 ```bash

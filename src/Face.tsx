@@ -9,10 +9,11 @@ type Props = {
   blink?: number; // 0 = open, 1 = closed (only affects 'look'/'happy')
   look?: {x: number; y: number}; // -1..1 pupil offset
   ink?: string;
+  talk?: number; // 0 = closed, 1 = wide open; replaces the mouth with an open talking mouth (look/happy/calm)
 };
 
 // Parametric face: round-capped ink lines, no outlines on the body.
-export const Face: React.FC<Props> = ({expression, size, blink = 0, look = {x: 0, y: 0}, ink = C.ink}) => {
+export const Face: React.FC<Props> = ({expression, size, blink = 0, look = {x: 0, y: 0}, ink = C.ink, talk = 0}) => {
   const s = size;
   const sw = Math.max(3, s * 0.07); // stroke width
   const ex = s * 0.24; // eye x offset
@@ -70,6 +71,13 @@ export const Face: React.FC<Props> = ({expression, size, blink = 0, look = {x: 0
     default:
       eyes = [arcEye(-ex, true), arcEye(ex, true)];
       mouth = <path d={`M ${-mw} ${mouthY - mw * 0.2} Q 0 ${mouthY + mw * 0.6} ${mw} ${mouthY - mw * 0.2}`} {...line} />;
+  }
+  if (talk > 0.08 && (expression === 'look' || expression === 'happy' || expression === 'calm')) {
+    // Open "D" mouth: flat top, rounded bottom, height follows the voice
+    const tw = mw * 0.85;
+    const th = mw * (0.35 + 0.9 * Math.min(1, talk));
+    const top = mouthY - mw * 0.25;
+    mouth = <path d={`M ${-tw} ${top} L ${tw} ${top} Q ${tw} ${top + th} 0 ${top + th} Q ${-tw} ${top + th} ${-tw} ${top} Z`} fill={ink} stroke={ink} strokeWidth={sw * 0.6} strokeLinejoin="round" />;
   }
   return (
     <g>

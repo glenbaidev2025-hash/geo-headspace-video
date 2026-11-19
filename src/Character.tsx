@@ -20,6 +20,7 @@ export type CharacterProps = {
   look?: {x: number; y: number};
   shadeDir?: {x: number; y: number}; // direction of the shade crescent
   noFace?: boolean;
+  talk?: number; // 0..1 open talking mouth (see Face)
 };
 
 // Rounded polygon path helper
@@ -79,7 +80,7 @@ export const Character: React.FC<CharacterProps> = (p) => {
       <g clipPath={`url(#clip-${id})`}>{shapeEl(shape, w, h, color, `translate(${-dir.x * off} ${-dir.y * off})`)}</g>
       {!p.noFace && p.expression && (
         <g transform={`translate(${fo.x} ${fo.y})`}>
-          <Face expression={p.expression} size={faceSize} blink={p.blink} look={p.look} />
+          <Face expression={p.expression} size={faceSize} blink={p.blink} look={p.look} talk={p.talk} />
         </g>
       )}
     </g>

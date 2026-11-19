@@ -1,0 +1,42 @@
+{
+  "slug": "ep02-check-the-time-yt",
+  "model_id": "eleven_v4",
+  "voice_id": "EXAVITQu4vr4xnSDxMaL",
+  "language_code": "en",
+  "voice_settings": {"stability": 0.5, "similarity_boost": 0.75},
+  "gap_s": 0.6,
+  "voices": {
+    "ja": {"voice_id": "cgSgspJ2msm6clMCkdW9", "language_code": "ja"}
+  },
+  "segments": [
+    {"id": "N01", "voice": "ja", "gap_after_s": 1.0, "text": "[warm, friendly] これから短い英語のストーリーが流れます。[short pause] 話し手は、何をするのを忘れてしまったでしょうか？ [curious] 聞き取ってみましょう。"},
+
+    {"id": "A01", "reuse": "ep02-check-the-time/S01", "text": "[casual, friendly] I picked up my phone to check the time."},
+    {"id": "A02", "reuse": "ep02-check-the-time/S02", "text": "[light, amused] Then a friend sent me a video. I watched it… [short pause] and then another one."},
+    {"id": "A03", "reuse": "ep02-check-the-time/S03", "text": "[matter-of-fact] Ten minutes later, I put my phone down."},
+    {"id": "A04", "reuse": "ep02-check-the-time/S04", "gap_after_s": 1.5, "text": "[surprised] Wait. [long pause] [confused] What time is it?"},
+
+    {"id": "N02", "voice": "ja", "gap_after_s": 1.0, "text": "[warm] 聞き取れましたか？ [short pause] 答えは、「時間を見ること」でした。[amused] スマホを手に取ったのに、動画を次々と見てしまい、肝心の時間を見忘れてしまったのです。[friendly] では、英語と日本語の字幕付きで、もう一度聞いてみましょう。"},
+
+    {"id": "B01", "reuse": "ep02-check-the-time/S01", "text": "[casual, friendly] I picked up my phone to check the time."},
+    {"id": "B02", "reuse": "ep02-check-the-time/S02", "text": "[light, amused] Then a friend sent me a video. I watched it… [short pause] and then another one."},
+    {"id": "B03", "reuse": "ep02-check-the-time/S03", "text": "[matter-of-fact] Ten minutes later, I put my phone down."},
+    {"id": "B04", "reuse": "ep02-check-the-time/S04", "gap_after_s": 1.2, "text": "[surprised] Wait. [long pause] [confused] What time is it?"},
+
+    {"id": "N03", "voice": "ja", "text": "[warm] この場面を英語で振り返ると、こう言えます。"},
+    {"id": "C01", "reuse": "ep02-check-the-time/S05", "text": "[warm, slowly] I only meant to check the time."},
+    {"id": "C02", "text": "[warm, slowly] I ended up scrolling for ten minutes."},
+    {"id": "N04", "voice": "ja", "text": "[clear, friendly] 「I only meant to」は、「〜するだけのつもりだった」。[short pause] 「I ended up …ing」は、「結局〜してしまった」という意味です。[warm] 日常の買い物でもよく使えます。たとえば、こうです。"},
+    {"id": "C03", "text": "[warm, amused] I only meant to buy milk. [short pause] I ended up spending thirty dollars."},
+    {"id": "N05", "voice": "ja", "gap_after_s": 1.0, "text": "[warm, amused] 牛乳だけ買うつもりだったのに、結局30ドルも使ってしまった、という意味になります。"},
+
+    {"id": "N06", "voice": "ja", "text": "[encouraging] それでは、声に出して練習してみましょう。ポーズのあとに、続けて言ってみてください。"},
+    {"id": "P01", "gap_after_s": 3.0, "text": "[clear, slowly] I only meant to check the time."},
+    {"id": "P02", "gap_after_s": 3.0, "text": "[clear, slowly] I ended up scrolling for ten minutes."},
+    {"id": "N07", "voice": "ja", "text": "[encouraging] 次は、2文をつなげて言ってみましょう。"},
+    {"id": "P03", "gap_after_s": 5.0, "text": "[clear, slowly] I only meant to check the time. [short pause] I ended up scrolling for ten minutes."},
+
+    {"id": "N08", "voice": "ja", "text": "[warm, curious] 最後に、あなたならどう続けますか？ お店で買い物をする場面を思い浮かべて、コメント欄で文を完成させてみてください。"},
+    {"id": "E01", "gap_after_s": 2.0, "text": "[warm, inviting] I only meant to buy milk, but I ended up…"}
+  ]
+}

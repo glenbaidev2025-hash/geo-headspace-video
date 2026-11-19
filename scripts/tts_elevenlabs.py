@@ -27,6 +27,17 @@ API = "https://api.elevenlabs.io/v1/text-to-speech/{voice_id}?output_format=mp3_
 ROOT = Path(__file__).resolve().parent.parent
 
 
+def seg_cfg(cfg: dict, seg: dict) -> dict:
+    """Config for one segment: top-level settings, overridden by a named voice in cfg["voices"] (seg["voice"])."""
+    c = dict(cfg)
+    if seg.get("voice"):
+        voices = cfg.get("voices", {})
+        if seg["voice"] not in voices:
+            sys.exit(f"Segment {seg['id']}: unknown voice '{seg['voice']}' (define it under \"voices\")")
+        c.update(voices[seg["voice"]])
+    return c
+
+
 def tts(cfg: dict, text: str, out: Path, key: str) -> None:
     body = {"text": text, "model_id": cfg.get("model_id", "eleven_v4")}
     if cfg.get("language_code"):
@@ -57,12 +68,12 @@ def duration(path: Path) -> float:
     return round(float(r.stdout.strip()), 3)
 
 
-def concat(files: list, gap: float, out: Path) -> None:
+def concat(files: list, out: Path) -> None:
     if not shutil.which("ffmpeg"):
         print("ffmpeg not found; skipped full preview.")
         return
     inputs, filters = [], []
-    for i, f in enumerate(files):
+    for i, (f, gap) in enumerate(files):
         inputs += ["-i", str(f)]
         filters.append(f"[{i}:a]apad=pad_dur={gap}[a{i}]")
     chain = "".join(f"[a{i}]" for i in range(len(files)))
@@ -101,13 +112,21 @@ def main() -> None:
         key = os.environ.get("ELEVENLABS_API_KEY")
         if not key:
             sys.exit("Set ELEVENLABS_API_KEY in the environment or in <repo>/.env first.")
-        if not cfg.get("voice_id") or "Voice ID" in cfg["voice_id"]:
+        if not cfg.get("voice_id") or "Voice ID" in cfg["voice_id"]:  # default voice; per-segment voices via cfg["voices"]
             sys.exit("Fill in voice_id in the config.")
         for seg in cfg["segments"]:
             if only and seg["id"] not in only:
                 continue
+            dst = out_dir / f"{seg['id']}.mp3"
+            if seg.get("reuse"):
+                src = ROOT / "public" / "audio" / f"{seg['reuse']}.mp3"
+                if not src.exists():
+                    sys.exit(f"Segment {seg['id']}: reuse source {src} not found")
+                print(f"COPY {seg['id']} <- {seg['reuse']}")
+                shutil.copyfile(src, dst)
+                continue
             print(f"TTS {seg['id']} ...")
-            tts(cfg, seg["text"], out_dir / f"{seg['id']}.mp3", key)
+            tts(seg_cfg(cfg, seg), seg["text"], dst, key)
 
     gap = float(cfg.get("gap_s", 0.35))
     t, items, files = 0.0, [], []
@@ -116,12 +135,13 @@ def main() -> None:
         if not f.exists():
             sys.exit(f"Missing {f}")
         d = duration(f)
-        items.append({"id": seg["id"], "file": f"audio/{slug}/{f.name}", "start_s": round(t, 3), "duration_s": d, "text": seg["text"]})
-        files.append(f)
-        t += d + gap
+        g = float(seg.get("gap_after_s", gap))
+        items.append({"id": seg["id"], "file": f"audio/{slug}/{f.name}", "start_s": round(t, 3), "duration_s": d, "text": seg["text"], "gap_after_s": g})
+        files.append((f, g))
+        t += d + g
     timeline = {"slug": slug, "gap_s": gap, "total_s": round(t, 3), "segments": items}
     (out_dir / "timeline.json").write_text(json.dumps(timeline, ensure_ascii=False, indent=2), encoding="utf-8")
-    concat(files, gap, out_dir / f"{slug}_full.mp3")
+    concat(files, out_dir / f"{slug}_full.mp3")
     print(f"Done: {len(items)} segments, {t:.1f}s -> {out_dir / 'timeline.json'}")
 
 

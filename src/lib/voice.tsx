@@ -2,7 +2,7 @@ import React from 'react';
 import {Audio, Sequence, staticFile} from 'remotion';
 
 // Shape of public/audio/<slug>/timeline.json written by scripts/tts_elevenlabs.py
-export type VoiceSegment = {id: string; file: string; start_s: number; duration_s: number; text: string};
+export type VoiceSegment = {id: string; file: string; start_s: number; duration_s: number; text: string; gap_after_s?: number};
 export type VoiceTimeline = {slug: string; gap_s: number; total_s: number; segments: VoiceSegment[]};
 
 export const LEAD_IN_S = 0.5; // silence before the first line
@@ -45,3 +45,25 @@ export const VoiceTrack: React.FC<{tl: VoiceTimeline; fps: number; volume?: numb
     ))}
   </>
 );
+
+// Per-frame loudness written by scripts/envelope.py (public/audio/<slug>/envelope.json)
+export type VoiceEnvelope = {fps: number; segments: Record<string, number[]>};
+
+/**
+ * Mouth openness (0..1) at a global frame, from the loudness of whichever of `ids` is playing.
+ * Lightly smoothed so the mouth doesn't flicker.
+ */
+export const talkLevel = (tl: VoiceTimeline, env: VoiceEnvelope, fps: number, frame: number, ids?: string[]) => {
+  for (const s of tl.segments) {
+    if (ids && !ids.includes(s.id)) continue;
+    const vals = env.segments[s.id];
+    if (!vals) continue;
+    const i = frame - sec(LEAD_IN_S + s.start_s, fps);
+    if (i < 0 || i >= vals.length) continue;
+    const a = vals[i] ?? 0;
+    const b = vals[i - 1] ?? a;
+    const v = (a * 2 + b) / 3;
+    return v < 0.15 ? 0 : Math.min(1, v * 1.1);
+  }
+  return 0;
+};

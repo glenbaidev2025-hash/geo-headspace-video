@@ -69,3 +69,35 @@ export const Captions: React.FC<Props> = ({
     </div>
   );
 };
+
+/**
+ * Narration subtitles: shows one chunk at a time. `chunks[].at` is seconds from `start`
+ * (take them from pauses in the voice, e.g. ffmpeg silencedetect).
+ */
+export const NarrationSubs: React.FC<{
+  chunks: {at: number; text: string}[];
+  start: number;
+  end: number;
+  top: number;
+  color?: string;
+  size?: number;
+  width?: number;
+  fontFamily?: string;
+}> = ({chunks, start, end, top, color = C.ink, size = 42, width = 1500, fontFamily = FONT_JA}) => {
+  const f = useCurrentFrame();
+  const {fps, width: W} = useVideoConfig();
+  if (f < start || f >= end) return null;
+  const t = (f - start) / fps;
+  let idx = -1;
+  chunks.forEach((c, i) => {
+    if (t >= c.at) idx = i;
+  });
+  if (idx < 0) return null;
+  const k = spring({frame: f - start - Math.round(chunks[idx].at * fps), fps, config: {damping: 16, stiffness: 240}});
+  const out = interpolate(f, [end - 5, end], [1, 0], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
+  return (
+    <div style={{position: 'absolute', top, left: (W - width) / 2, width, textAlign: 'center', fontFamily, fontWeight: 900, fontSize: size, lineHeight: 1.35, color, opacity: Math.min(1, k * 1.5) * out, transform: `translateY(${(1 - k) * 14}px)`}}>
+      {chunks[idx].text}
+    </div>
+  );
+};
