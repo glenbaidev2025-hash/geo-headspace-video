@@ -1,0 +1,49 @@
+{
+  "slug": "ep02-check-the-time",
+  "gap_s": 0.5,
+  "total_s": 23.429,
+  "segments": [
+    {
+      "id": "S01",
+      "file": "audio/ep02-check-the-time/S01.mp3",
+      "start_s": 0.0,
+      "duration_s": 2.273,
+      "text": "[casual, friendly] I picked up my phone to check the time."
+    },
+    {
+      "id": "S02",
+      "file": "audio/ep02-check-the-time/S02.mp3",
+      "start_s": 2.773,
+      "duration_s": 5.329,
+      "text": "[light, amused] Then a friend sent me a video. I watched it… [short pause] and then another one."
+    },
+    {
+      "id": "S03",
+      "file": "audio/ep02-check-the-time/S03.mp3",
+      "start_s": 8.602,
+      "duration_s": 2.691,
+      "text": "[matter-of-fact] Ten minutes later, I put my phone down."
+    },
+    {
+      "id": "S04",
+      "file": "audio/ep02-check-the-time/S04.mp3",
+      "start_s": 11.793,
+      "duration_s": 3.396,
+      "text": "[surprised] Wait. [long pause] [confused] What time is it?"
+    },
+    {
+      "id": "S05",
+      "file": "audio/ep02-check-the-time/S05.mp3",
+      "start_s": 15.689,
+      "duration_s": 2.691,
+      "text": "[warm, slowly] I only meant to check the time."
+    },
+    {
+      "id": "S06",
+      "file": "audio/ep02-check-the-time/S06.mp3",
+      "start_s": 18.88,
+      "duration_s": 4.049,
+      "text": "[warm, slowly] I ended up scrolling for ten minutes. [chuckles]"
+    }
+  ]
+}

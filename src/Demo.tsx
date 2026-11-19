@@ -1,7 +1,8 @@
 import React from 'react';
 import {AbsoluteFill, Easing, interpolate, Sequence, spring, useCurrentFrame, useVideoConfig} from 'remotion';
 import {Character, CharacterProps} from './Character';
-import {C, FONT} from './theme';
+import {C} from './theme';
+import {ArcText} from './lib/ArcText';
 
 const W = 1920;
 const H = 1080;
@@ -78,30 +79,6 @@ const wavePath = (yBase: number, amp: number, len: number, phase: number) => {
     d += ` L ${x} ${yBase + amp * Math.sin((x / len) * Math.PI * 2 + phase)}`;
   }
   return d + ` L ${W + 20} ${H + 20} Z`;
-};
-
-const ArcText: React.FC<{text: string; cx: number; cy: number; r: number; start: number}> = ({text, cx, cy, r, start}) => {
-  const f = useCurrentFrame();
-  const {fps} = useVideoConfig();
-  const chars = [...text];
-  const spanDeg = 10.5 * (chars.length - 1);
-  return (
-    <g>
-      {chars.map((ch, i) => {
-        const deg = -90 - spanDeg / 2 + (spanDeg / (chars.length - 1)) * i;
-        const rad = (deg * Math.PI) / 180;
-        const x = cx + r * Math.cos(rad);
-        const y = cy + r * Math.sin(rad);
-        const s = spring({frame: f - start - i * 2, fps, config: {damping: 11, stiffness: 180}});
-        return (
-          <text key={i} x={0} y={0} transform={`translate(${x} ${y}) rotate(${deg + 90}) scale(${s})`} textAnchor="middle" dominantBaseline="middle"
-            fontFamily={FONT} fontWeight={900} fontSize={76} fill={C.night} opacity={Math.min(1, s * 1.5)}>
-            {ch}
-          </text>
-        );
-      })}
-    </g>
-  );
 };
 
 const Calm: React.FC = () => {

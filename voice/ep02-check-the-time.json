@@ -1,0 +1,16 @@
+{
+  "slug": "ep02-check-the-time",
+  "model_id": "eleven_v4",
+  "voice_id": "EXAVITQu4vr4xnSDxMaL",
+  "language_code": "en",
+  "voice_settings": {"stability": 0.5, "similarity_boost": 0.75},
+  "gap_s": 0.5,
+  "segments": [
+    {"id": "S01", "text": "[casual, friendly] I picked up my phone to check the time."},
+    {"id": "S02", "text": "[light, amused] Then a friend sent me a video. I watched it… [short pause] and then another one."},
+    {"id": "S03", "text": "[matter-of-fact] Ten minutes later, I put my phone down."},
+    {"id": "S04", "text": "[surprised] Wait. [long pause] [confused] What time is it?"},
+    {"id": "S05", "text": "[warm, slowly] I only meant to check the time."},
+    {"id": "S06", "text": "[warm, slowly] I ended up scrolling for ten minutes. [chuckles]"}
+  ]
+}

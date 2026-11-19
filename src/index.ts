@@ -1,8 +1,14 @@
 import React from 'react';
 import {Composition, registerRoot} from 'remotion';
 import {Demo} from './Demo';
+import {Ep02CheckTheTime, EP02_FRAMES} from './videos/ep02-check-the-time';
 
 const Root: React.FC = () =>
-  React.createElement(Composition, {id: 'Demo', component: Demo, durationInFrames: 300, fps: 30, width: 1920, height: 1080});
+  React.createElement(
+    React.Fragment,
+    null,
+    React.createElement(Composition, {id: 'Demo', component: Demo, durationInFrames: 300, fps: 30, width: 1920, height: 1080}),
+    React.createElement(Composition, {id: 'Ep02CheckTheTime', component: Ep02CheckTheTime, durationInFrames: EP02_FRAMES, fps: 30, width: 1080, height: 1920}),
+  );
 
 registerRoot(Root);
