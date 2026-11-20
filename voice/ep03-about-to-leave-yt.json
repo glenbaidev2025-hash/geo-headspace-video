@@ -1,0 +1,42 @@
+{
+  "slug": "ep03-about-to-leave-yt",
+  "model_id": "eleven_v4",
+  "voice_id": "EXAVITQu4vr4xnSDxMaL",
+  "language_code": "en",
+  "voice_settings": {"stability": 0.5, "similarity_boost": 0.75},
+  "gap_s": 0.6,
+  "voices": {
+    "ja": {"voice_id": "cgSgspJ2msm6clMCkdW9", "language_code": "ja"}
+  },
+  "segments": [
+    {"id": "N01", "voice": "ja", "gap_after_s": 1.0, "text": "[warm, friendly] これから短い英語のストーリーが流れます。[short pause] 話し手は、玄関で何に気づいたでしょうか？ [curious] まずは字幕なしで、聞き取ってみましょう。"},
+
+    {"id": "A01", "reuse": "ep03-about-to-leave/S01", "text": "[casual, brisk] I put on my shoes and grabbed my bag."},
+    {"id": "A02", "reuse": "ep03-about-to-leave/S02", "text": "[casual] I opened the front door."},
+    {"id": "A03", "reuse": "ep03-about-to-leave/S03", "text": "[hesitant] Then I stopped… and checked my pockets. [short pause] [worried] No keys. [short pause] No wallet."},
+    {"id": "A04", "reuse": "ep03-about-to-leave/S04", "gap_after_s": 1.5, "text": "[surprised] Wait. [long pause] [panicked] Where is my phone?"},
+
+    {"id": "N02", "voice": "ja", "gap_after_s": 1.0, "text": "[warm] 聞き取れましたか？ [short pause] 答えは、「鍵も、財布も、スマホも忘れたこと」でした。[amused] 靴を履いてドアまで開けたのに、肝心の持ち物が、ポケットに何も入っていなかったのです。[friendly] では、英語と日本語の字幕付きで、もう一度聞いてみましょう。"},
+
+    {"id": "B01", "reuse": "ep03-about-to-leave/S01", "text": "[casual, brisk] I put on my shoes and grabbed my bag."},
+    {"id": "B02", "reuse": "ep03-about-to-leave/S02", "text": "[casual] I opened the front door."},
+    {"id": "B03", "reuse": "ep03-about-to-leave/S03", "text": "[hesitant] Then I stopped… and checked my pockets. [short pause] [worried] No keys. [short pause] No wallet."},
+    {"id": "B04", "reuse": "ep03-about-to-leave/S04", "gap_after_s": 1.2, "text": "[surprised] Wait. [long pause] [panicked] Where is my phone?"},
+
+    {"id": "N03", "voice": "ja", "text": "[warm] この場面を英語で振り返ると、こう言えます。"},
+    {"id": "C01", "reuse": "ep03-about-to-leave/S05", "text": "[warm, slowly] I was just about to leave."},
+    {"id": "C02", "reuse": "ep03-about-to-leave/S06", "text": "[warm, slowly] My keys completely slipped my mind. [chuckles]"},
+    {"id": "N04", "voice": "ja", "text": "[clear, friendly] 「I was just about to」は、「ちょうど〜しようとしていた」。[short pause] 「completely slipped my mind」は、「すっかり忘れていた・頭から抜けていた」という意味です。[warm] 日常のやり取りでもよく使えます。たとえば、こうです。"},
+    {"id": "C03", "text": "[apologetic, friendly] Sorry, your message completely slipped my mind."},
+    {"id": "N05", "voice": "ja", "gap_after_s": 1.0, "text": "[warm, amused] ごめん、メッセージのことすっかり忘れてた、という意味になります。"},
+
+    {"id": "N06", "voice": "ja", "text": "[encouraging] それでは、声に出して練習してみましょう。ポーズのあとに、続けて言ってみてください。"},
+    {"id": "P01", "gap_after_s": 3.0, "text": "[clear, slowly] I was just about to leave."},
+    {"id": "P02", "gap_after_s": 3.0, "text": "[clear, slowly] My keys completely slipped my mind."},
+    {"id": "N07", "voice": "ja", "text": "[encouraging] 次は、2文をつなげて言ってみましょう。"},
+    {"id": "P03", "gap_after_s": 5.0, "text": "[clear, slowly] I was just about to leave. [short pause] My keys completely slipped my mind."},
+
+    {"id": "N08", "voice": "ja", "text": "[warm, curious] 最後に、あなたならどう続けますか？ 家を出る直前や、寝る直前の場面を思い浮かべて、コメント欄で文を完成させてみてください。"},
+    {"id": "E01", "gap_after_s": 2.0, "text": "[warm, inviting] I was just about to… [short pause] when I remembered…"}
+  ]
+}

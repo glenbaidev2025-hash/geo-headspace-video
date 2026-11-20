@@ -4,12 +4,14 @@ import {Demo} from './Demo';
 import {Ep02CheckTheTime, EP02_FRAMES} from './videos/ep02-check-the-time';
 import {Ep02CheckTheTimeYT, EP02YT_FRAMES} from './videos/ep02-check-the-time-yt';
 import {Ep03AboutToLeave, EP03_FRAMES} from './videos/ep03-about-to-leave';
+import {Ep03AboutToLeaveYT, EP03YT_FRAMES} from './videos/ep03-about-to-leave-yt';
 
 const Root: React.FC = () =>
   React.createElement(
     React.Fragment,
     null,
     React.createElement(Composition, {id: 'Demo', component: Demo, durationInFrames: 300, fps: 30, width: 1920, height: 1080}),
+    React.createElement(Composition, {id: 'Ep03AboutToLeaveYT', component: Ep03AboutToLeaveYT, durationInFrames: EP03YT_FRAMES, fps: 30, width: 1920, height: 1080}),
     React.createElement(Composition, {id: 'Ep03AboutToLeave', component: Ep03AboutToLeave, durationInFrames: EP03_FRAMES, fps: 30, width: 1080, height: 1920}),
     React.createElement(Composition, {id: 'Ep02CheckTheTimeYT', component: Ep02CheckTheTimeYT, durationInFrames: EP02YT_FRAMES, fps: 30, width: 1920, height: 1080}),
     React.createElement(Composition, {id: 'Ep02CheckTheTime', component: Ep02CheckTheTime, durationInFrames: EP02_FRAMES, fps: 30, width: 1080, height: 1920}),

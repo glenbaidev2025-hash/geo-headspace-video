@@ -1,0 +1,191 @@
+{
+  "slug": "ep03-about-to-leave-yt",
+  "gap_s": 0.6,
+  "total_s": 155.778,
+  "segments": [
+    {
+      "id": "N01",
+      "file": "audio/ep03-about-to-leave-yt/N01.mp3",
+      "start_s": 0.0,
+      "duration_s": 10.031,
+      "text": "[warm, friendly] これから短い英語のストーリーが流れます。[short pause] 話し手は、玄関で何に気づいたでしょうか？ [curious] まずは字幕なしで、聞き取ってみましょう。",
+      "gap_after_s": 1.0
+    },
+    {
+      "id": "A01",
+      "file": "audio/ep03-about-to-leave-yt/A01.mp3",
+      "start_s": 11.031,
+      "duration_s": 2.586,
+      "text": "[casual, brisk] I put on my shoes and grabbed my bag.",
+      "gap_after_s": 0.6
+    },
+    {
+      "id": "A02",
+      "file": "audio/ep03-about-to-leave-yt/A02.mp3",
+      "start_s": 14.217,
+      "duration_s": 1.724,
+      "text": "[casual] I opened the front door.",
+      "gap_after_s": 0.6
+    },
+    {
+      "id": "A03",
+      "file": "audio/ep03-about-to-leave-yt/A03.mp3",
+      "start_s": 16.541,
+      "duration_s": 6.687,
+      "text": "[hesitant] Then I stopped… and checked my pockets. [short pause] [worried] No keys. [short pause] No wallet.",
+      "gap_after_s": 0.6
+    },
+    {
+      "id": "A04",
+      "file": "audio/ep03-about-to-leave-yt/A04.mp3",
+      "start_s": 23.828,
+      "duration_s": 3.553,
+      "text": "[surprised] Wait. [long pause] [panicked] Where is my phone?",
+      "gap_after_s": 1.5
+    },
+    {
+      "id": "N02",
+      "file": "audio/ep03-about-to-leave-yt/N02.mp3",
+      "start_s": 28.881,
+      "duration_s": 17.868,
+      "text": "[warm] 聞き取れましたか？ [short pause] 答えは、「鍵も、財布も、スマホも忘れたこと」でした。[amused] 靴を履いてドアまで開けたのに、肝心の持ち物が、ポケットに何も入っていなかったのです。[friendly] では、英語と日本語の字幕付きで、もう一度聞いてみましょう。",
+      "gap_after_s": 1.0
+    },
+    {
+      "id": "B01",
+      "file": "audio/ep03-about-to-leave-yt/B01.mp3",
+      "start_s": 47.749,
+      "duration_s": 2.586,
+      "text": "[casual, brisk] I put on my shoes and grabbed my bag.",
+      "gap_after_s": 0.6
+    },
+    {
+      "id": "B02",
+      "file": "audio/ep03-about-to-leave-yt/B02.mp3",
+      "start_s": 50.935,
+      "duration_s": 1.724,
+      "text": "[casual] I opened the front door.",
+      "gap_after_s": 0.6
+    },
+    {
+      "id": "B03",
+      "file": "audio/ep03-about-to-leave-yt/B03.mp3",
+      "start_s": 53.259,
+      "duration_s": 6.687,
+      "text": "[hesitant] Then I stopped… and checked my pockets. [short pause] [worried] No keys. [short pause] No wallet.",
+      "gap_after_s": 0.6
+    },
+    {
+      "id": "B04",
+      "file": "audio/ep03-about-to-leave-yt/B04.mp3",
+      "start_s": 60.546,
+      "duration_s": 3.553,
+      "text": "[surprised] Wait. [long pause] [panicked] Where is my phone?",
+      "gap_after_s": 1.2
+    },
+    {
+      "id": "N03",
+      "file": "audio/ep03-about-to-leave-yt/N03.mp3",
+      "start_s": 65.299,
+      "duration_s": 3.474,
+      "text": "[warm] この場面を英語で振り返ると、こう言えます。",
+      "gap_after_s": 0.6
+    },
+    {
+      "id": "C01",
+      "file": "audio/ep03-about-to-leave-yt/C01.mp3",
+      "start_s": 69.373,
+      "duration_s": 2.586,
+      "text": "[warm, slowly] I was just about to leave.",
+      "gap_after_s": 0.6
+    },
+    {
+      "id": "C02",
+      "file": "audio/ep03-about-to-leave-yt/C02.mp3",
+      "start_s": 72.559,
+      "duration_s": 4.284,
+      "text": "[warm, slowly] My keys completely slipped my mind. [chuckles]",
+      "gap_after_s": 0.6
+    },
+    {
+      "id": "N04",
+      "file": "audio/ep03-about-to-leave-yt/N04.mp3",
+      "start_s": 77.443,
+      "duration_s": 16.509,
+      "text": "[clear, friendly] 「I was just about to」は、「ちょうど〜しようとしていた」。[short pause] 「completely slipped my mind」は、「すっかり忘れていた・頭から抜けていた」という意味です。[warm] 日常のやり取りでもよく使えます。たとえば、こうです。",
+      "gap_after_s": 0.6
+    },
+    {
+      "id": "C03",
+      "file": "audio/ep03-about-to-leave-yt/C03.mp3",
+      "start_s": 94.552,
+      "duration_s": 3.631,
+      "text": "[apologetic, friendly] Sorry, your message completely slipped my mind.",
+      "gap_after_s": 0.6
+    },
+    {
+      "id": "N05",
+      "file": "audio/ep03-about-to-leave-yt/N05.mp3",
+      "start_s": 98.783,
+      "duration_s": 5.329,
+      "text": "[warm, amused] ごめん、メッセージのことすっかり忘れてた、という意味になります。",
+      "gap_after_s": 1.0
+    },
+    {
+      "id": "N06",
+      "file": "audio/ep03-about-to-leave-yt/N06.mp3",
+      "start_s": 105.112,
+      "duration_s": 5.878,
+      "text": "[encouraging] それでは、声に出して練習してみましょう。ポーズのあとに、続けて言ってみてください。",
+      "gap_after_s": 0.6
+    },
+    {
+      "id": "P01",
+      "file": "audio/ep03-about-to-leave-yt/P01.mp3",
+      "start_s": 111.59,
+      "duration_s": 2.769,
+      "text": "[clear, slowly] I was just about to leave.",
+      "gap_after_s": 3.0
+    },
+    {
+      "id": "P02",
+      "file": "audio/ep03-about-to-leave-yt/P02.mp3",
+      "start_s": 117.359,
+      "duration_s": 3.553,
+      "text": "[clear, slowly] My keys completely slipped my mind.",
+      "gap_after_s": 3.0
+    },
+    {
+      "id": "N07",
+      "file": "audio/ep03-about-to-leave-yt/N07.mp3",
+      "start_s": 123.912,
+      "duration_s": 3.082,
+      "text": "[encouraging] 次は、2文をつなげて言ってみましょう。",
+      "gap_after_s": 0.6
+    },
+    {
+      "id": "P03",
+      "file": "audio/ep03-about-to-leave-yt/P03.mp3",
+      "start_s": 127.594,
+      "duration_s": 6.687,
+      "text": "[clear, slowly] I was just about to leave. [short pause] My keys completely slipped my mind.",
+      "gap_after_s": 5.0
+    },
+    {
+      "id": "N08",
+      "file": "audio/ep03-about-to-leave-yt/N08.mp3",
+      "start_s": 139.281,
+      "duration_s": 10.188,
+      "text": "[warm, curious] 最後に、あなたならどう続けますか？ 家を出る直前や、寝る直前の場面を思い浮かべて、コメント欄で文を完成させてみてください。",
+      "gap_after_s": 0.6
+    },
+    {
+      "id": "E01",
+      "file": "audio/ep03-about-to-leave-yt/E01.mp3",
+      "start_s": 150.069,
+      "duration_s": 3.709,
+      "text": "[warm, inviting] I was just about to… [short pause] when I remembered…",
+      "gap_after_s": 2.0
+    }
+  ]
+}

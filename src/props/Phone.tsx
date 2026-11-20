@@ -102,3 +102,50 @@ export const ClockFace: React.FC<{x: number; y: number; size: number; progress: 
     </g>
   );
 };
+
+/**
+ * Chat thread on a phone screen. `incoming` bubbles (left, light) are text-free placeholder lines;
+ * the optional `reply` bubble (right, yellow) pops in with `replyK` (0..1+). `unread` shows a badge on the first bubble.
+ */
+export const ChatScreen: React.FC<{sw: number; sh: number; incoming?: number; unread?: number; reply?: string; replyK?: number; typing?: number}> = ({
+  sw, sh, incoming = 2, unread = 0, reply, replyK = 0, typing = 0,
+}) => {
+  const pad = sw * 0.08;
+  const bw = sw * 0.62;
+  const bh = sh * 0.1;
+  const top = -sh / 2 + sh * 0.12;
+  return (
+    <g>
+      <rect x={-sw / 2} y={-sh / 2} width={sw} height={sh * 0.08} fill="#FFFFFF" opacity={0.12} />
+      <circle cx={-sw / 2 + pad + sh * 0.025} cy={-sh / 2 + sh * 0.04} r={sh * 0.022} fill={C.lightBlue} />
+      {Array.from({length: incoming}).map((_, i) => {
+        const y = top + i * (bh + sh * 0.04);
+        const w = i % 2 ? bw * 0.72 : bw;
+        return (
+          <g key={i}>
+            <rect x={-sw / 2 + pad} y={y} width={w} height={bh} rx={bh * 0.45} fill={C.lightBlue} />
+            <rect x={-sw / 2 + pad + bh * 0.4} y={y + bh * 0.42} width={w * 0.6} height={bh * 0.16} rx={bh * 0.08} fill="#FFFFFF" opacity={0.85} />
+            {i === 0 && unread > 0.01 && (
+              <g transform={`translate(${-sw / 2 + pad + w} ${y}) scale(${unread})`}>
+                <circle r={bh * 0.32} fill={C.orange} />
+                <text x={0} y={bh * 0.03} textAnchor="middle" dominantBaseline="middle" fontFamily={FONT_EN} fontWeight={900} fontSize={bh * 0.42} fill="#FFFFFF">1</text>
+              </g>
+            )}
+          </g>
+        );
+      })}
+      {typing > 0.01 && replyK < 0.5 && (
+        <g transform={`translate(${sw / 2 - pad - bh * 0.9} ${sh * 0.22})`} opacity={typing}>
+          <rect x={-bh * 0.9} y={-bh / 2} width={bh * 1.8} height={bh} rx={bh / 2} fill={C.yellow} />
+          {[-1, 0, 1].map((d) => <circle key={d} cx={d * bh * 0.45} cy={0} r={bh * 0.12} fill={C.ink} opacity={0.6} />)}
+        </g>
+      )}
+      {reply && replyK > 0.001 && (
+        <g transform={`translate(${sw / 2 - pad} ${sh * 0.22}) scale(${replyK}) translate(${-(sw / 2 - pad)} ${-(sh * 0.22)})`}>
+          <rect x={sw / 2 - pad - bw * 1.08} y={sh * 0.22 - bh * 0.7} width={bw * 1.08} height={bh * 1.4} rx={bh * 0.5} fill={C.yellow} />
+          <text x={sw / 2 - pad - bw * 0.54} y={sh * 0.22 + 2} textAnchor="middle" dominantBaseline="middle" fontFamily={FONT_EN} fontWeight={900} fontSize={bh * 0.62} fill={C.ink}>{reply}</text>
+        </g>
+      )}
+    </g>
+  );
+};
