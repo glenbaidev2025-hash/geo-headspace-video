@@ -12,6 +12,9 @@ export const C = {
   screen: '#1A1530', screenGlow: '#3A2F7A',
   offWhite: '#F7F4F0', lightGray: '#E2DFDA', grayShade: '#C9C5BF',
   ink: '#2B2623',
+  // Owl Listen mascot (from the brand logo)
+  owlBrown: '#9A4F1C', owlBrownShade: '#6E3410', owlCream: '#FFF6E8', owlTan: '#EBC08E', owlEye: '#2E160A',
+  owlBeak: '#FFC21A', owlBeakShade: '#F29A00', owlGreen: '#3CC13B', owlGreenShade: '#1E8F1E', owlPad: '#DDF8AE',
 };
 
 export const FONT = '"Noto Sans CJK SC", "PingFang SC", "Helvetica Neue", sans-serif';

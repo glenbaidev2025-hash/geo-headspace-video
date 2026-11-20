@@ -1,0 +1,16 @@
+{
+  "slug": "ep03-about-to-leave",
+  "model_id": "eleven_v4",
+  "voice_id": "EXAVITQu4vr4xnSDxMaL",
+  "language_code": "en",
+  "voice_settings": {"stability": 0.5, "similarity_boost": 0.75},
+  "gap_s": 0.5,
+  "segments": [
+    {"id": "S01", "text": "[casual, brisk] I put on my shoes and grabbed my bag."},
+    {"id": "S02", "text": "[casual] I opened the front door."},
+    {"id": "S03", "text": "[hesitant] Then I stopped… and checked my pockets. [short pause] [worried] No keys. [short pause] No wallet."},
+    {"id": "S04", "gap_after_s": 0.8, "text": "[surprised] Wait. [long pause] [panicked] Where is my phone?"},
+    {"id": "S05", "text": "[warm, slowly] I was just about to leave."},
+    {"id": "S06", "gap_after_s": 1.0, "text": "[warm, slowly] My keys completely slipped my mind. [chuckles]"}
+  ]
+}

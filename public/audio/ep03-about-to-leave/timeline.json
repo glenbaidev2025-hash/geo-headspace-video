@@ -1,0 +1,55 @@
+{
+  "slug": "ep03-about-to-leave",
+  "gap_s": 0.5,
+  "total_s": 25.22,
+  "segments": [
+    {
+      "id": "S01",
+      "file": "audio/ep03-about-to-leave/S01.mp3",
+      "start_s": 0.0,
+      "duration_s": 2.586,
+      "text": "[casual, brisk] I put on my shoes and grabbed my bag.",
+      "gap_after_s": 0.5
+    },
+    {
+      "id": "S02",
+      "file": "audio/ep03-about-to-leave/S02.mp3",
+      "start_s": 3.086,
+      "duration_s": 1.724,
+      "text": "[casual] I opened the front door.",
+      "gap_after_s": 0.5
+    },
+    {
+      "id": "S03",
+      "file": "audio/ep03-about-to-leave/S03.mp3",
+      "start_s": 5.31,
+      "duration_s": 6.687,
+      "text": "[hesitant] Then I stopped… and checked my pockets. [short pause] [worried] No keys. [short pause] No wallet.",
+      "gap_after_s": 0.5
+    },
+    {
+      "id": "S04",
+      "file": "audio/ep03-about-to-leave/S04.mp3",
+      "start_s": 12.497,
+      "duration_s": 3.553,
+      "text": "[surprised] Wait. [long pause] [panicked] Where is my phone?",
+      "gap_after_s": 0.8
+    },
+    {
+      "id": "S05",
+      "file": "audio/ep03-about-to-leave/S05.mp3",
+      "start_s": 16.85,
+      "duration_s": 2.586,
+      "text": "[warm, slowly] I was just about to leave.",
+      "gap_after_s": 0.5
+    },
+    {
+      "id": "S06",
+      "file": "audio/ep03-about-to-leave/S06.mp3",
+      "start_s": 19.936,
+      "duration_s": 4.284,
+      "text": "[warm, slowly] My keys completely slipped my mind. [chuckles]",
+      "gap_after_s": 1.0
+    }
+  ]
+}
