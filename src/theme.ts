@@ -12,6 +12,7 @@ export const C = {
   screen: '#1A1530', screenGlow: '#3A2F7A',
   offWhite: '#F7F4F0', lightGray: '#E2DFDA', grayShade: '#C9C5BF',
   ink: '#2B2623',
+  red: '#F23A2E', redShade: '#C2241A',
   // Owl Listen mascot (from the brand logo)
   owlBrown: '#9A4F1C', owlBrownShade: '#6E3410', owlCream: '#FFF6E8', owlTan: '#EBC08E', owlEye: '#2E160A',
   owlBeak: '#FFC21A', owlBeakShade: '#F29A00', owlGreen: '#3CC13B', owlGreenShade: '#1E8F1E', owlPad: '#DDF8AE',

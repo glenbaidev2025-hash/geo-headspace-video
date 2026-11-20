@@ -1,0 +1,39 @@
+{
+  "slug": "ep04-didnt-catch-that",
+  "gap_s": 0.4,
+  "total_s": 21.658,
+  "segments": [
+    {
+      "id": "S01",
+      "file": "audio/ep04-didnt-catch-that/S01.mp3",
+      "start_s": 0.0,
+      "duration_s": 2.691,
+      "text": "[fast, rushed, casual] For here or to go? Want room for cream?",
+      "gap_after_s": 0.5
+    },
+    {
+      "id": "S02",
+      "file": "audio/ep04-didnt-catch-that/S02.mp3",
+      "start_s": 3.191,
+      "duration_s": 3.318,
+      "text": "[natural, conversational, quick] Sorry, I didn't catch that. Could you say that again?",
+      "gap_after_s": 1.6
+    },
+    {
+      "id": "S03",
+      "file": "audio/ep04-didnt-catch-that/S03.mp3",
+      "start_s": 8.109,
+      "duration_s": 3.631,
+      "text": "[clear, slowly] Sorry, I didn't catch that.",
+      "gap_after_s": 3.6
+    },
+    {
+      "id": "S04",
+      "file": "audio/ep04-didnt-catch-that/S04.mp3",
+      "start_s": 15.34,
+      "duration_s": 3.318,
+      "text": "Sorry, I didn't catch that. Could you say that again?",
+      "gap_after_s": 3.0
+    }
+  ]
+}

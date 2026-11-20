@@ -1,0 +1,17 @@
+{
+  "slug": "ep04-didnt-catch-that",
+  "model_id": "eleven_v4",
+  "voice_id": "EXAVITQu4vr4xnSDxMaL",
+  "language_code": "en",
+  "voice_settings": {"stability": 0.5, "similarity_boost": 0.75},
+  "gap_s": 0.4,
+  "voices": {
+    "barista": {"voice_id": "JBFqnCBsd6RMkjVDRZzb", "language_code": "en", "voice_settings": {"stability": 0.35, "similarity_boost": 0.75}}
+  },
+  "segments": [
+    {"id": "S01", "voice": "barista", "gap_after_s": 0.5, "text": "[fast, rushed, casual] For here or to go? Want room for cream?"},
+    {"id": "S02", "gap_after_s": 1.6, "text": "[natural, conversational, quick] Sorry, I didn't catch that. Could you say that again?"},
+    {"id": "S03", "gap_after_s": 3.6, "text": "[clear, slowly] Sorry, I didn't catch that."},
+    {"id": "S04", "reuse": "ep04-didnt-catch-that/S02", "gap_after_s": 3.0, "text": "Sorry, I didn't catch that. Could you say that again?"}
+  ]
+}
