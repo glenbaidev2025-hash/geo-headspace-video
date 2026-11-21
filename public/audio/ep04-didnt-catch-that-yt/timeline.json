@@ -1,0 +1,223 @@
+{
+  "slug": "ep04-didnt-catch-that-yt",
+  "gap_s": 0.6,
+  "total_s": 173.398,
+  "segments": [
+    {
+      "id": "N01",
+      "file": "audio/ep04-didnt-catch-that-yt/N01.mp3",
+      "start_s": 0.0,
+      "duration_s": 10.684,
+      "text": "[warm, friendly] これから短い英語のストーリーが流れます。[short pause] カフェで、話し手はなぜ困ってしまったのでしょうか？ [curious] まずは字幕なしで、聞き取ってみましょう。",
+      "gap_after_s": 1.0
+    },
+    {
+      "id": "A01",
+      "file": "audio/ep04-didnt-catch-that-yt/A01.mp3",
+      "start_s": 11.684,
+      "duration_s": 2.508,
+      "text": "[casual storytelling] The barista asked me a quick question.",
+      "gap_after_s": 0.6
+    },
+    {
+      "id": "A02",
+      "file": "audio/ep04-didnt-catch-that-yt/A02.mp3",
+      "start_s": 14.792,
+      "duration_s": 3.161,
+      "text": "[cheerful] I smiled and said, \"Yes, please.\"",
+      "gap_after_s": 0.6
+    },
+    {
+      "id": "A03",
+      "file": "audio/ep04-didnt-catch-that-yt/A03.mp3",
+      "start_s": 18.553,
+      "duration_s": 3.553,
+      "text": "[confused] Wait. [long pause] What did she just say?",
+      "gap_after_s": 0.6
+    },
+    {
+      "id": "A04",
+      "file": "audio/ep04-didnt-catch-that-yt/A04.mp3",
+      "start_s": 22.706,
+      "duration_s": 3.239,
+      "text": "[embarrassed] I actually didn't catch a single word.",
+      "gap_after_s": 0.6
+    },
+    {
+      "id": "A05",
+      "file": "audio/ep04-didnt-catch-that-yt/A05.mp3",
+      "start_s": 26.545,
+      "duration_s": 5.329,
+      "text": "[determined] Next time, I'll just say, \"Sorry, I didn't catch that. Could you say that again?\"",
+      "gap_after_s": 1.5
+    },
+    {
+      "id": "N02",
+      "file": "audio/ep04-didnt-catch-that-yt/N02.mp3",
+      "start_s": 33.374,
+      "duration_s": 15.386,
+      "text": "[warm] 聞き取れましたか？ [short pause] 答えは、店員さんの英語が早すぎて一言も聞き取れず、[amused] とりあえず笑顔で「Yes, please」と言ってしまったこと、でした。[friendly] では、英語と日本語の字幕付きで、もう一度聞いてみましょう。",
+      "gap_after_s": 1.0
+    },
+    {
+      "id": "B01",
+      "file": "audio/ep04-didnt-catch-that-yt/B01.mp3",
+      "start_s": 49.76,
+      "duration_s": 2.508,
+      "text": "The barista asked me a quick question.",
+      "gap_after_s": 0.6
+    },
+    {
+      "id": "B02",
+      "file": "audio/ep04-didnt-catch-that-yt/B02.mp3",
+      "start_s": 52.868,
+      "duration_s": 3.161,
+      "text": "I smiled and said, \"Yes, please.\"",
+      "gap_after_s": 0.6
+    },
+    {
+      "id": "B03",
+      "file": "audio/ep04-didnt-catch-that-yt/B03.mp3",
+      "start_s": 56.629,
+      "duration_s": 3.553,
+      "text": "Wait. What did she just say?",
+      "gap_after_s": 0.6
+    },
+    {
+      "id": "B04",
+      "file": "audio/ep04-didnt-catch-that-yt/B04.mp3",
+      "start_s": 60.782,
+      "duration_s": 3.239,
+      "text": "I actually didn't catch a single word.",
+      "gap_after_s": 0.6
+    },
+    {
+      "id": "B05",
+      "file": "audio/ep04-didnt-catch-that-yt/B05.mp3",
+      "start_s": 64.621,
+      "duration_s": 5.329,
+      "text": "Next time, I'll just say, \"Sorry, I didn't catch that. Could you say that again?\"",
+      "gap_after_s": 1.2
+    },
+    {
+      "id": "N03",
+      "file": "audio/ep04-didnt-catch-that-yt/N03.mp3",
+      "start_s": 71.15,
+      "duration_s": 13.009,
+      "text": "[clear, friendly] 英語が聞き取れなかったとき、教科書では「Pardon?」や「One more time.」を習いますが、[short pause] 日常会話では、少し硬かったり、命令っぽく聞こえることがあります。",
+      "gap_after_s": 0.6
+    },
+    {
+      "id": "N04",
+      "file": "audio/ep04-didnt-catch-that-yt/N04.mp3",
+      "start_s": 84.759,
+      "duration_s": 3.971,
+      "text": "[warm] そんなとき、ネイティブがよく使うのが、この表現です。",
+      "gap_after_s": 0.6
+    },
+    {
+      "id": "C01",
+      "file": "audio/ep04-didnt-catch-that-yt/C01.mp3",
+      "start_s": 89.33,
+      "duration_s": 3.318,
+      "text": "Sorry, I didn't catch that. Could you say that again?",
+      "gap_after_s": 0.6
+    },
+    {
+      "id": "N05",
+      "file": "audio/ep04-didnt-catch-that-yt/N05.mp3",
+      "start_s": 93.248,
+      "duration_s": 11.233,
+      "text": "[clear, friendly] 「I didn't catch that」は、「今の、聞き取れませんでした」。[short pause] 「Could you say that again?」は、「もう一度言ってもらえますか？」という、丁寧で自然なフレーズです。",
+      "gap_after_s": 0.6
+    },
+    {
+      "id": "N06",
+      "file": "audio/ep04-didnt-catch-that-yt/N06.mp3",
+      "start_s": 105.081,
+      "duration_s": 7.393,
+      "text": "[playful] 聞き取りのポイントは、tの音が落ちて、[slowly] 「ディドゥン キャッチャッ」のように繋がるところです。",
+      "gap_after_s": 0.8
+    },
+    {
+      "id": "N07",
+      "file": "audio/ep04-didnt-catch-that-yt/N07.mp3",
+      "start_s": 113.274,
+      "duration_s": 3.396,
+      "text": "[friendly] 日常のやり取りでも、こんなふうに応用できます。",
+      "gap_after_s": 0.6
+    },
+    {
+      "id": "C02",
+      "file": "audio/ep04-didnt-catch-that-yt/C02.mp3",
+      "start_s": 117.27,
+      "duration_s": 2.508,
+      "text": "[polite, friendly] Sorry, I didn't catch your name.",
+      "gap_after_s": 0.6
+    },
+    {
+      "id": "C03",
+      "file": "audio/ep04-didnt-catch-that-yt/C03.mp3",
+      "start_s": 120.378,
+      "duration_s": 3.474,
+      "text": "[slightly raised voice] It's a bit noisy here. Could you say that again?",
+      "gap_after_s": 1.0
+    },
+    {
+      "id": "N08",
+      "file": "audio/ep04-didnt-catch-that-yt/N08.mp3",
+      "start_s": 124.852,
+      "duration_s": 5.799,
+      "text": "[encouraging] それでは、声に出して練習してみましょう。ポーズのあとに、続けて言ってみてください。",
+      "gap_after_s": 0.6
+    },
+    {
+      "id": "P01",
+      "file": "audio/ep04-didnt-catch-that-yt/P01.mp3",
+      "start_s": 131.251,
+      "duration_s": 3.631,
+      "text": "Sorry, I didn't catch that.",
+      "gap_after_s": 3.0
+    },
+    {
+      "id": "P02",
+      "file": "audio/ep04-didnt-catch-that-yt/P02.mp3",
+      "start_s": 137.882,
+      "duration_s": 2.194,
+      "text": "[clear, slowly] Could you say that again?",
+      "gap_after_s": 3.0
+    },
+    {
+      "id": "N09",
+      "file": "audio/ep04-didnt-catch-that-yt/N09.mp3",
+      "start_s": 143.076,
+      "duration_s": 4.989,
+      "text": "[encouraging] 次は2文をつなげて、カフェで実際に使うつもりで言ってみましょう。",
+      "gap_after_s": 0.6
+    },
+    {
+      "id": "P03",
+      "file": "audio/ep04-didnt-catch-that-yt/P03.mp3",
+      "start_s": 148.665,
+      "duration_s": 3.318,
+      "text": "Sorry, I didn't catch that. Could you say that again?",
+      "gap_after_s": 5.0
+    },
+    {
+      "id": "N10",
+      "file": "audio/ep04-didnt-catch-that-yt/N10.mp3",
+      "start_s": 156.983,
+      "duration_s": 5.486,
+      "text": "[warm, curious] 最後に、あなたは英語が聞き取れなかったとき、普段なんて言っていますか？",
+      "gap_after_s": 0.6
+    },
+    {
+      "id": "N11",
+      "file": "audio/ep04-didnt-catch-that-yt/N11.mp3",
+      "start_s": 163.069,
+      "duration_s": 8.829,
+      "text": "[playful] A、Pardon？ B、One more time。C、[chuckles] とりあえず笑顔で「Yes」。[warm] ぜひ、コメント欄で教えてください！",
+      "gap_after_s": 1.5
+    }
+  ]
+}

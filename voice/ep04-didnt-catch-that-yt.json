@@ -1,0 +1,46 @@
+{
+  "slug": "ep04-didnt-catch-that-yt",
+  "model_id": "eleven_v4",
+  "voice_id": "EXAVITQu4vr4xnSDxMaL",
+  "language_code": "en",
+  "voice_settings": {"stability": 0.5, "similarity_boost": 0.75},
+  "gap_s": 0.6,
+  "voices": {
+    "ja": {"voice_id": "cgSgspJ2msm6clMCkdW9", "language_code": "ja"}
+  },
+  "segments": [
+    {"id": "N01", "voice": "ja", "gap_after_s": 1.0, "text": "[warm, friendly] これから短い英語のストーリーが流れます。[short pause] カフェで、話し手はなぜ困ってしまったのでしょうか？ [curious] まずは字幕なしで、聞き取ってみましょう。"},
+
+    {"id": "A01", "text": "[casual storytelling] The barista asked me a quick question."},
+    {"id": "A02", "text": "[cheerful] I smiled and said, \"Yes, please.\""},
+    {"id": "A03", "text": "[confused] Wait. [long pause] What did she just say?"},
+    {"id": "A04", "text": "[embarrassed] I actually didn't catch a single word."},
+    {"id": "A05", "gap_after_s": 1.5, "text": "[determined] Next time, I'll just say, \"Sorry, I didn't catch that. Could you say that again?\""},
+
+    {"id": "N02", "voice": "ja", "gap_after_s": 1.0, "text": "[warm] 聞き取れましたか？ [short pause] 答えは、店員さんの英語が早すぎて一言も聞き取れず、[amused] とりあえず笑顔で「Yes, please」と言ってしまったこと、でした。[friendly] では、英語と日本語の字幕付きで、もう一度聞いてみましょう。"},
+
+    {"id": "B01", "reuse": "ep04-didnt-catch-that-yt/A01", "text": "The barista asked me a quick question."},
+    {"id": "B02", "reuse": "ep04-didnt-catch-that-yt/A02", "text": "I smiled and said, \"Yes, please.\""},
+    {"id": "B03", "reuse": "ep04-didnt-catch-that-yt/A03", "text": "Wait. What did she just say?"},
+    {"id": "B04", "reuse": "ep04-didnt-catch-that-yt/A04", "text": "I actually didn't catch a single word."},
+    {"id": "B05", "reuse": "ep04-didnt-catch-that-yt/A05", "gap_after_s": 1.2, "text": "Next time, I'll just say, \"Sorry, I didn't catch that. Could you say that again?\""},
+
+    {"id": "N03", "voice": "ja", "text": "[clear, friendly] 英語が聞き取れなかったとき、教科書では「Pardon?」や「One more time.」を習いますが、[short pause] 日常会話では、少し硬かったり、命令っぽく聞こえることがあります。"},
+    {"id": "N04", "voice": "ja", "text": "[warm] そんなとき、ネイティブがよく使うのが、この表現です。"},
+    {"id": "C01", "reuse": "ep04-didnt-catch-that/S02", "text": "Sorry, I didn't catch that. Could you say that again?"},
+    {"id": "N05", "voice": "ja", "text": "[clear, friendly] 「I didn't catch that」は、「今の、聞き取れませんでした」。[short pause] 「Could you say that again?」は、「もう一度言ってもらえますか？」という、丁寧で自然なフレーズです。"},
+    {"id": "N06", "voice": "ja", "gap_after_s": 0.8, "text": "[playful] 聞き取りのポイントは、tの音が落ちて、[slowly] 「ディドゥン キャッチャッ」のように繋がるところです。"},
+    {"id": "N07", "voice": "ja", "text": "[friendly] 日常のやり取りでも、こんなふうに応用できます。"},
+    {"id": "C02", "text": "[polite, friendly] Sorry, I didn't catch your name."},
+    {"id": "C03", "gap_after_s": 1.0, "text": "[slightly raised voice] It's a bit noisy here. Could you say that again?"},
+
+    {"id": "N08", "voice": "ja", "text": "[encouraging] それでは、声に出して練習してみましょう。ポーズのあとに、続けて言ってみてください。"},
+    {"id": "P01", "reuse": "ep04-didnt-catch-that/S03", "gap_after_s": 3.0, "text": "Sorry, I didn't catch that."},
+    {"id": "P02", "gap_after_s": 3.0, "text": "[clear, slowly] Could you say that again?"},
+    {"id": "N09", "voice": "ja", "text": "[encouraging] 次は2文をつなげて、カフェで実際に使うつもりで言ってみましょう。"},
+    {"id": "P03", "reuse": "ep04-didnt-catch-that/S02", "gap_after_s": 5.0, "text": "Sorry, I didn't catch that. Could you say that again?"},
+
+    {"id": "N10", "voice": "ja", "text": "[warm, curious] 最後に、あなたは英語が聞き取れなかったとき、普段なんて言っていますか？"},
+    {"id": "N11", "voice": "ja", "gap_after_s": 1.5, "text": "[playful] A、Pardon？ B、One more time。C、[chuckles] とりあえず笑顔で「Yes」。[warm] ぜひ、コメント欄で教えてください！"}
+  ]
+}
