@@ -1,0 +1,39 @@
+{
+  "slug": "ep05-what-should-i-eat",
+  "gap_s": 0.4,
+  "total_s": 24.683,
+  "segments": [
+    {
+      "id": "S01",
+      "file": "audio/ep05-what-should-i-eat/S01.mp3",
+      "start_s": 0.0,
+      "duration_s": 5.068,
+      "text": "[hungry, quick, a little dramatic] It's already 8 p.m. and I'm STARVING. Ramen, sushi, or a burger?",
+      "gap_after_s": 0.3
+    },
+    {
+      "id": "S02",
+      "file": "audio/ep05-what-should-i-eat/S02.mp3",
+      "start_s": 5.368,
+      "duration_s": 4.833,
+      "text": "[natural, conversational, quick] I can't make up my mind. Actually, I'm really craving ramen tonight.",
+      "gap_after_s": 1.0
+    },
+    {
+      "id": "S03",
+      "file": "audio/ep05-what-should-i-eat/S03.mp3",
+      "start_s": 11.201,
+      "duration_s": 4.049,
+      "text": "[clear, a bit slower] I'm craving ramen. I can't make up my mind.",
+      "gap_after_s": 2.2
+    },
+    {
+      "id": "S04",
+      "file": "audio/ep05-what-should-i-eat/S04.mp3",
+      "start_s": 17.45,
+      "duration_s": 4.833,
+      "text": "I can't make up my mind. Actually, I'm really craving ramen tonight.",
+      "gap_after_s": 2.4
+    }
+  ]
+}

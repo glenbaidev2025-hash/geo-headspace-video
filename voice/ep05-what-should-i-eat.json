@@ -1,0 +1,34 @@
+{
+  "slug": "ep05-what-should-i-eat",
+  "model_id": "eleven_v4",
+  "voice_id": "EXAVITQu4vr4xnSDxMaL",
+  "language_code": "en",
+  "voice_settings": {
+    "stability": 0.5,
+    "similarity_boost": 0.75
+  },
+  "gap_s": 0.4,
+  "segments": [
+    {
+      "id": "S01",
+      "gap_after_s": 0.3,
+      "text": "[hungry, quick, a little dramatic] It's already 8 p.m. and I'm STARVING. Ramen, sushi, or a burger?"
+    },
+    {
+      "id": "S02",
+      "gap_after_s": 1.0,
+      "text": "[natural, conversational, quick] I can't make up my mind. Actually, I'm really craving ramen tonight."
+    },
+    {
+      "id": "S03",
+      "gap_after_s": 2.2,
+      "text": "[clear, a bit slower] I'm craving ramen. I can't make up my mind."
+    },
+    {
+      "id": "S04",
+      "reuse": "ep05-what-should-i-eat/S02",
+      "gap_after_s": 2.4,
+      "text": "I can't make up my mind. Actually, I'm really craving ramen tonight."
+    }
+  ]
+}
