@@ -1,0 +1,49 @@
+{
+  "slug": "ep05-what-should-i-eat-yt",
+  "model_id": "eleven_v4",
+  "voice_id": "EXAVITQu4vr4xnSDxMaL",
+  "language_code": "en",
+  "voice_settings": {"stability": 0.5, "similarity_boost": 0.75},
+  "gap_s": 0.6,
+  "voices": {
+    "ja": {"voice_id": "cgSgspJ2msm6clMCkdW9", "language_code": "ja"}
+  },
+  "segments": [
+    {"id": "N01", "voice": "ja", "gap_after_s": 1.0, "text": "[warm, friendly] これから短い英語のストーリーが流れます。[short pause] 夜8時にお腹が空いた話し手は、最終的に、何を食べることにしたでしょうか？ [curious] まずは字幕なしで、聞き取ってみましょう。"},
+
+    {"id": "A01", "text": "[tired, hungry] It's already 8 p.m.… [sighs] and I'm starving."},
+    {"id": "A02", "text": "[thinking out loud] Ramen, sushi, [short pause] or a burger?"},
+    {"id": "A03", "text": "[indecisive] I keep scrolling through the menu… [sighs] and I can't make up my mind."},
+    {"id": "A04", "text": "[surprised] Wait. [long pause] [excited] Actually, I'm really craving ramen tonight."},
+    {"id": "A05", "gap_after_s": 1.5, "text": "[happy, decisive] Okay, decision made — ramen it is!"},
+
+    {"id": "N02", "voice": "ja", "gap_after_s": 1.0, "text": "[warm] 聞き取れましたか？ [short pause] 答えは、「ラーメン」でした。[amused] メニューを見ながら迷っていたけれど、今夜は無性にラーメンが食べたいと気づいたんですね。[friendly] では、英語と日本語の字幕付きで、もう一度聞いてみましょう。"},
+
+    {"id": "B01", "reuse": "ep05-what-should-i-eat-yt/A01", "text": "[tired, hungry] It's already 8 p.m.… [sighs] and I'm starving."},
+    {"id": "B02", "reuse": "ep05-what-should-i-eat-yt/A02", "text": "[thinking out loud] Ramen, sushi, [short pause] or a burger?"},
+    {"id": "B03", "reuse": "ep05-what-should-i-eat-yt/A03", "text": "[indecisive] I keep scrolling through the menu… [sighs] and I can't make up my mind."},
+    {"id": "B04", "reuse": "ep05-what-should-i-eat-yt/A04", "text": "[surprised] Wait. [long pause] [excited] Actually, I'm really craving ramen tonight."},
+    {"id": "B05", "reuse": "ep05-what-should-i-eat-yt/A05", "gap_after_s": 1.2, "text": "[happy, decisive] Okay, decision made — ramen it is!"},
+
+    {"id": "N03", "voice": "ja", "text": "[clear, friendly] 「〜が食べたい」と言うとき、「I want to eat」ももちろん通じます。[short pause] でも、「無性に食べたい！めっちゃ食べたい！」という気持ちを表すとき、ネイティブはこう言います。"},
+    {"id": "C01", "text": "[warm, clear] I'm craving…"},
+    {"id": "N04", "voice": "ja", "text": "[friendly] そして、「決められない・迷っちゃう」は、こうです。"},
+    {"id": "C02", "gap_after_s": 0.9, "text": "[warm, clear] I can't make up my mind."},
+
+    {"id": "N05", "voice": "ja", "text": "[warm] 日常のいろいろな場面で、こんなふうに使えます。"},
+    {"id": "C03", "text": "[cheerful] I'm craving something sweet right now."},
+    {"id": "N06", "voice": "ja", "text": "[warm] 今、無性に甘いものが食べたい。"},
+    {"id": "C04", "text": "[playful, indecisive] There are too many flavors. [short pause] I can't make up my mind."},
+    {"id": "N07", "voice": "ja", "gap_after_s": 1.0, "text": "[warm, amused] 味が多すぎて、決められない。"},
+
+    {"id": "N08", "voice": "ja", "text": "[encouraging] それでは、声に出して練習してみましょう。ポーズのあとに、続けて言ってみてください。"},
+    {"id": "P01", "gap_after_s": 3.0, "text": "[clear, slowly] I'm really craving ramen tonight."},
+    {"id": "P02", "gap_after_s": 3.0, "text": "[clear, slowly] I can't make up my mind."},
+    {"id": "N09", "voice": "ja", "text": "[encouraging] 次は、2文をつなげて言ってみましょう。"},
+    {"id": "P03", "gap_after_s": 5.0, "text": "[clear, slowly] I can't make up my mind. [short pause] Actually, I'm really craving ramen tonight."},
+
+    {"id": "N10", "voice": "ja", "text": "[warm, curious] 最後に、あなたが今「無性に食べたいもの」を、英語でコメント欄に書いてみてください！"},
+    {"id": "E01", "text": "[warm, inviting] Right now, I'm craving…"},
+    {"id": "N11", "voice": "ja", "gap_after_s": 1.5, "text": "[cheerful] ラーメン、お寿司、チョコレート……何でもOKです！"}
+  ]
+}

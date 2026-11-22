@@ -1,0 +1,239 @@
+{
+  "slug": "ep05-what-should-i-eat-yt",
+  "gap_s": 0.6,
+  "total_s": 177.753,
+  "segments": [
+    {
+      "id": "N01",
+      "file": "audio/ep05-what-should-i-eat-yt/N01.mp3",
+      "start_s": 0.0,
+      "duration_s": 12.434,
+      "text": "[warm, friendly] これから短い英語のストーリーが流れます。[short pause] 夜8時にお腹が空いた話し手は、最終的に、何を食べることにしたでしょうか？ [curious] まずは字幕なしで、聞き取ってみましょう。",
+      "gap_after_s": 1.0
+    },
+    {
+      "id": "A01",
+      "file": "audio/ep05-what-should-i-eat-yt/A01.mp3",
+      "start_s": 13.434,
+      "duration_s": 4.676,
+      "text": "[tired, hungry] It's already 8 p.m.… [sighs] and I'm starving.",
+      "gap_after_s": 0.6
+    },
+    {
+      "id": "A02",
+      "file": "audio/ep05-what-should-i-eat-yt/A02.mp3",
+      "start_s": 18.71,
+      "duration_s": 3.866,
+      "text": "[thinking out loud] Ramen, sushi, [short pause] or a burger?",
+      "gap_after_s": 0.6
+    },
+    {
+      "id": "A03",
+      "file": "audio/ep05-what-should-i-eat-yt/A03.mp3",
+      "start_s": 23.176,
+      "duration_s": 5.068,
+      "text": "[indecisive] I keep scrolling through the menu… [sighs] and I can't make up my mind.",
+      "gap_after_s": 0.6
+    },
+    {
+      "id": "A04",
+      "file": "audio/ep05-what-should-i-eat-yt/A04.mp3",
+      "start_s": 28.844,
+      "duration_s": 5.407,
+      "text": "[surprised] Wait. [long pause] [excited] Actually, I'm really craving ramen tonight.",
+      "gap_after_s": 0.6
+    },
+    {
+      "id": "A05",
+      "file": "audio/ep05-what-should-i-eat-yt/A05.mp3",
+      "start_s": 34.851,
+      "duration_s": 3.396,
+      "text": "[happy, decisive] Okay, decision made — ramen it is!",
+      "gap_after_s": 1.5
+    },
+    {
+      "id": "N02",
+      "file": "audio/ep05-what-should-i-eat-yt/N02.mp3",
+      "start_s": 39.747,
+      "duration_s": 15.073,
+      "text": "[warm] 聞き取れましたか？ [short pause] 答えは、「ラーメン」でした。[amused] メニューを見ながら迷っていたけれど、今夜は無性にラーメンが食べたいと気づいたんですね。[friendly] では、英語と日本語の字幕付きで、もう一度聞いてみましょう。",
+      "gap_after_s": 1.0
+    },
+    {
+      "id": "B01",
+      "file": "audio/ep05-what-should-i-eat-yt/B01.mp3",
+      "start_s": 55.82,
+      "duration_s": 4.676,
+      "text": "[tired, hungry] It's already 8 p.m.… [sighs] and I'm starving.",
+      "gap_after_s": 0.6
+    },
+    {
+      "id": "B02",
+      "file": "audio/ep05-what-should-i-eat-yt/B02.mp3",
+      "start_s": 61.096,
+      "duration_s": 3.866,
+      "text": "[thinking out loud] Ramen, sushi, [short pause] or a burger?",
+      "gap_after_s": 0.6
+    },
+    {
+      "id": "B03",
+      "file": "audio/ep05-what-should-i-eat-yt/B03.mp3",
+      "start_s": 65.562,
+      "duration_s": 5.068,
+      "text": "[indecisive] I keep scrolling through the menu… [sighs] and I can't make up my mind.",
+      "gap_after_s": 0.6
+    },
+    {
+      "id": "B04",
+      "file": "audio/ep05-what-should-i-eat-yt/B04.mp3",
+      "start_s": 71.23,
+      "duration_s": 5.407,
+      "text": "[surprised] Wait. [long pause] [excited] Actually, I'm really craving ramen tonight.",
+      "gap_after_s": 0.6
+    },
+    {
+      "id": "B05",
+      "file": "audio/ep05-what-should-i-eat-yt/B05.mp3",
+      "start_s": 77.237,
+      "duration_s": 3.396,
+      "text": "[happy, decisive] Okay, decision made — ramen it is!",
+      "gap_after_s": 1.2
+    },
+    {
+      "id": "N03",
+      "file": "audio/ep05-what-should-i-eat-yt/N03.mp3",
+      "start_s": 81.833,
+      "duration_s": 13.166,
+      "text": "[clear, friendly] 「〜が食べたい」と言うとき、「I want to eat」ももちろん通じます。[short pause] でも、「無性に食べたい！めっちゃ食べたい！」という気持ちを表すとき、ネイティブはこう言います。",
+      "gap_after_s": 0.6
+    },
+    {
+      "id": "C01",
+      "file": "audio/ep05-what-should-i-eat-yt/C01.mp3",
+      "start_s": 95.599,
+      "duration_s": 1.802,
+      "text": "[warm, clear] I'm craving…",
+      "gap_after_s": 0.6
+    },
+    {
+      "id": "N04",
+      "file": "audio/ep05-what-should-i-eat-yt/N04.mp3",
+      "start_s": 98.001,
+      "duration_s": 4.833,
+      "text": "[friendly] そして、「決められない・迷っちゃう」は、こうです。",
+      "gap_after_s": 0.6
+    },
+    {
+      "id": "C02",
+      "file": "audio/ep05-what-should-i-eat-yt/C02.mp3",
+      "start_s": 103.434,
+      "duration_s": 2.194,
+      "text": "[warm, clear] I can't make up my mind.",
+      "gap_after_s": 0.9
+    },
+    {
+      "id": "N05",
+      "file": "audio/ep05-what-should-i-eat-yt/N05.mp3",
+      "start_s": 106.528,
+      "duration_s": 3.709,
+      "text": "[warm] 日常のいろいろな場面で、こんなふうに使えます。",
+      "gap_after_s": 0.6
+    },
+    {
+      "id": "C03",
+      "file": "audio/ep05-what-should-i-eat-yt/C03.mp3",
+      "start_s": 110.837,
+      "duration_s": 3.161,
+      "text": "[cheerful] I'm craving something sweet right now.",
+      "gap_after_s": 0.6
+    },
+    {
+      "id": "N06",
+      "file": "audio/ep05-what-should-i-eat-yt/N06.mp3",
+      "start_s": 114.598,
+      "duration_s": 3.318,
+      "text": "[warm] 今、無性に甘いものが食べたい。",
+      "gap_after_s": 0.6
+    },
+    {
+      "id": "C04",
+      "file": "audio/ep05-what-should-i-eat-yt/C04.mp3",
+      "start_s": 118.516,
+      "duration_s": 4.049,
+      "text": "[playful, indecisive] There are too many flavors. [short pause] I can't make up my mind.",
+      "gap_after_s": 0.6
+    },
+    {
+      "id": "N07",
+      "file": "audio/ep05-what-should-i-eat-yt/N07.mp3",
+      "start_s": 123.165,
+      "duration_s": 3.239,
+      "text": "[warm, amused] 味が多すぎて、決められない。",
+      "gap_after_s": 1.0
+    },
+    {
+      "id": "N08",
+      "file": "audio/ep05-what-should-i-eat-yt/N08.mp3",
+      "start_s": 127.404,
+      "duration_s": 5.799,
+      "text": "[encouraging] それでは、声に出して練習してみましょう。ポーズのあとに、続けて言ってみてください。",
+      "gap_after_s": 0.6
+    },
+    {
+      "id": "P01",
+      "file": "audio/ep05-what-should-i-eat-yt/P01.mp3",
+      "start_s": 133.803,
+      "duration_s": 3.866,
+      "text": "[clear, slowly] I'm really craving ramen tonight.",
+      "gap_after_s": 3.0
+    },
+    {
+      "id": "P02",
+      "file": "audio/ep05-what-should-i-eat-yt/P02.mp3",
+      "start_s": 140.669,
+      "duration_s": 2.926,
+      "text": "[clear, slowly] I can't make up my mind.",
+      "gap_after_s": 3.0
+    },
+    {
+      "id": "N09",
+      "file": "audio/ep05-what-should-i-eat-yt/N09.mp3",
+      "start_s": 146.595,
+      "duration_s": 3.004,
+      "text": "[encouraging] 次は、2文をつなげて言ってみましょう。",
+      "gap_after_s": 0.6
+    },
+    {
+      "id": "P03",
+      "file": "audio/ep05-what-should-i-eat-yt/P03.mp3",
+      "start_s": 150.199,
+      "duration_s": 6.348,
+      "text": "[clear, slowly] I can't make up my mind. [short pause] Actually, I'm really craving ramen tonight.",
+      "gap_after_s": 5.0
+    },
+    {
+      "id": "N10",
+      "file": "audio/ep05-what-should-i-eat-yt/N10.mp3",
+      "start_s": 161.547,
+      "duration_s": 6.531,
+      "text": "[warm, curious] 最後に、あなたが今「無性に食べたいもの」を、英語でコメント欄に書いてみてください！",
+      "gap_after_s": 0.6
+    },
+    {
+      "id": "E01",
+      "file": "audio/ep05-what-should-i-eat-yt/E01.mp3",
+      "start_s": 168.678,
+      "duration_s": 2.769,
+      "text": "[warm, inviting] Right now, I'm craving…",
+      "gap_after_s": 0.6
+    },
+    {
+      "id": "N11",
+      "file": "audio/ep05-what-should-i-eat-yt/N11.mp3",
+      "start_s": 172.047,
+      "duration_s": 4.206,
+      "text": "[cheerful] ラーメン、お寿司、チョコレート……何でもOKです！",
+      "gap_after_s": 1.5
+    }
+  ]
+}
